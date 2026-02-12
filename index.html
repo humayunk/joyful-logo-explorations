@@ -14,7 +14,6 @@
       line-height: 1.6;
     }
 
-    /* ---- Page Header ---- */
     .page-header {
       text-align: center;
       padding: 56px 40px 40px;
@@ -22,92 +21,66 @@
       border-bottom: 1px solid #e5e5e5;
     }
 
-    .page-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
+    .page-header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    .page-header p { color: #666; font-size: 1.05rem; margin-top: 6px; }
 
-    .page-header p {
-      color: #666;
-      font-size: 1.05rem;
-      margin-top: 6px;
-    }
-
-    /* ---- Sections ---- */
-    section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 56px 40px;
-    }
-
-    section h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    section > .subtitle {
-      color: #666;
-      margin-bottom: 32px;
-      font-size: 0.95rem;
-    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 56px 40px; }
+    .container h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 6px; }
+    .container > .subtitle { color: #666; margin-bottom: 32px; font-size: 0.95rem; }
 
     /* ---- Brand Family ---- */
     .logo-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 20px;
-      align-items: start;
     }
 
     .logo-item {
       text-align: center;
-      padding: 20px 8px;
+      padding: 24px 12px;
       background: #fff;
       border-radius: 10px;
       border: 1px solid #e8e8e8;
     }
 
-    .logo-item img {
-      width: 100%;
-      height: auto;
-    }
+    .logo-item img { width: 100%; height: auto; }
 
     .logo-item .label {
       margin-top: 14px;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       color: #999;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
-    .logo-item.master {
-      border-color: #ccc;
-      background: #fcfcfc;
-    }
-
-    /* ---- Question Callout ---- */
+    /* ---- Question ---- */
     .question-box {
       background: #fff;
       border: 2px solid #e0e0e0;
       border-radius: 12px;
       padding: 36px 40px;
       text-align: center;
-      max-width: 820px;
+      max-width: 840px;
       margin: 0 auto;
     }
 
-    .question-box h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+    .question-box h2 { font-size: 1.5rem; margin-bottom: 10px; }
+    .question-box p { color: #555; max-width: 660px; margin: 0 auto; font-size: 0.95rem; }
+
+    .approaches {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
     }
 
-    .question-box p {
-      color: #555;
-      max-width: 640px;
-      margin: 0 auto;
+    .approach-tag {
+      padding: 5px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #fff;
     }
 
     /* ---- Option Section ---- */
@@ -135,17 +108,10 @@
       color: #fff;
     }
 
-    .option-header h2 {
-      font-size: 1.4rem;
-    }
+    .option-header h2 { font-size: 1.4rem; }
+    .option-section > .subtitle { color: #666; margin-bottom: 36px; font-size: 0.95rem; }
 
-    .option-section > .subtitle {
-      color: #666;
-      margin-bottom: 36px;
-      font-size: 0.95rem;
-    }
-
-    /* ---- Swatches + Marks Row ---- */
+    /* ---- Color System Row ---- */
     .color-system {
       display: flex;
       gap: 12px;
@@ -162,36 +128,22 @@
     }
 
     .color-system-item.is-master {
-      border-style: dashed;
-      border-color: #ccc;
+      border: 2px dashed #ccc;
     }
 
     .j-mark {
-      width: 52px;
-      height: 52px;
+      display: block;
+      width: 60px;
+      height: 60px;
       margin: 0 auto 10px;
+      overflow: visible;
     }
 
-    .color-name {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 2px;
-    }
+    .color-name { font-size: 0.82rem; font-weight: 600; color: #333; margin-bottom: 2px; }
+    .color-service { font-size: 0.72rem; color: #999; margin-bottom: 6px; }
+    .color-hex { font-size: 0.72rem; color: #bbb; font-family: 'SF Mono', 'Fira Code', monospace; }
 
-    .color-service {
-      font-size: 0.72rem;
-      color: #999;
-      margin-bottom: 6px;
-    }
-
-    .color-hex {
-      font-size: 0.72rem;
-      color: #bbb;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-    }
-
-    /* ---- Website Concept Mockup ---- */
+    /* ---- Website Mockups ---- */
     .concept-label {
       font-size: 0.75rem;
       font-weight: 600;
@@ -201,233 +153,178 @@
       margin-bottom: 12px;
     }
 
-    .website-mockup {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06);
-      overflow: hidden;
+    .mockup-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
       margin-bottom: 40px;
     }
 
-    /* Mockup browser chrome */
+    .mockup-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mockup-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .website-mockup {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06);
+      overflow: hidden;
+      flex: 1;
+    }
+
     .mockup-chrome {
       display: flex;
       align-items: center;
       gap: 6px;
-      padding: 10px 16px;
+      padding: 8px 14px;
       background: #f5f5f5;
       border-bottom: 1px solid #e5e5e5;
     }
 
-    .chrome-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #ddd;
-    }
+    .chrome-dot { width: 8px; height: 8px; border-radius: 50%; background: #ddd; }
 
     .chrome-url {
       flex: 1;
-      margin-left: 10px;
-      padding: 4px 12px;
+      margin-left: 8px;
+      padding: 3px 10px;
       background: #fff;
       border-radius: 4px;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       color: #999;
       font-family: monospace;
     }
 
-    /* Mockup nav */
     .mockup-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 24px;
+      padding: 12px 20px;
       border-bottom: 1px solid #eee;
     }
 
     .mockup-brand {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.9rem;
       display: flex;
       align-items: center;
-      gap: 8px;
-    }
-
-    .mockup-brand svg {
-      width: 26px;
-      height: 26px;
-    }
-
-    .mockup-brand .brand-text {
+      gap: 7px;
       color: #333;
     }
 
+    .mockup-brand svg { width: 22px; height: 22px; display: block; overflow: visible; }
+
     .mockup-links {
       display: flex;
-      gap: 20px;
-      font-size: 0.85rem;
+      gap: 16px;
+      font-size: 0.78rem;
       color: #888;
     }
 
     .mockup-cta {
-      padding: 7px 18px;
+      padding: 6px 14px;
       border-radius: 6px;
       color: #fff;
-      font-size: 0.82rem;
+      font-size: 0.75rem;
       font-weight: 600;
     }
 
-    /* Mockup service selector */
-    .mockup-services {
-      padding: 20px 24px;
-      border-bottom: 1px solid #f0f0f0;
+    /* Mockup hero */
+    .mockup-hero {
+      padding: 28px 20px;
     }
 
-    .mockup-services .services-label {
-      font-size: 0.72rem;
+    .mockup-hero h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin-bottom: 4px;
+    }
+
+    .mockup-hero p {
+      color: #888;
+      font-size: 0.78rem;
+      margin-bottom: 16px;
+      max-width: 360px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      padding: 7px 18px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    /* Mockup location cards */
+    .mockup-locations {
+      padding: 16px 20px 20px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .locations-label {
+      font-size: 0.68rem;
       color: #bbb;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 10px;
     }
 
-    .service-pills {
-      display: flex;
-      gap: 8px;
-    }
-
-    .service-pill {
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #fff;
-    }
-
-    /* Mockup card grid */
-    .mockup-cards {
-      padding: 24px;
+    .location-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
     }
 
-    .mockup-card {
+    .location-card {
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid #eee;
     }
 
-    .card-color-bar {
-      height: 5px;
+    .location-card .loc-bar { height: 4px; }
+    .location-card .loc-body { padding: 12px; }
+    .location-card .loc-name { font-weight: 600; font-size: 0.8rem; margin-bottom: 2px; }
+    .location-card .loc-type { font-size: 0.7rem; color: #999; }
+
+    .location-card.coming-soon { opacity: 0.45; }
+    .location-card.coming-soon .loc-bar { background: #ddd !important; }
+
+    /* ---- Breadcrumb in location mockup ---- */
+    .mockup-breadcrumb {
+      padding: 8px 20px;
+      font-size: 0.7rem;
+      color: #bbb;
+      border-bottom: 1px solid #f0f0f0;
     }
 
-    .card-body {
-      padding: 16px;
-    }
+    .mockup-breadcrumb .crumb-active { color: #666; font-weight: 500; }
 
-    .card-title {
-      font-weight: 600;
-      font-size: 0.9rem;
-      margin-bottom: 3px;
-    }
-
-    .card-desc {
-      font-size: 0.78rem;
-      color: #888;
-      margin-bottom: 14px;
-      line-height: 1.4;
-    }
-
-    .card-btn {
-      display: inline-block;
-      padding: 5px 12px;
-      border-radius: 5px;
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: #fff;
-    }
-
-    /* Mockup hero */
-    .mockup-hero {
-      padding: 40px 24px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    .mockup-hero-content {
-      flex: 1;
-    }
-
-    .mockup-hero-content h3 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      margin-bottom: 8px;
-      color: #1a1a1a;
-    }
-
-    .mockup-hero-content p {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 20px;
-      max-width: 420px;
-    }
-
-    .hero-btn {
-      display: inline-block;
-      padding: 10px 24px;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .mockup-hero-visual {
-      flex: 0 0 280px;
-      height: 180px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.15;
-    }
-
-    .mockup-hero-visual svg {
-      width: 80px;
-      height: 80px;
-    }
-
-    /* ---- Divider ---- */
+    /* ---- Section Divider ---- */
     .section-divider {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 40px;
     }
 
-    .section-divider hr {
-      border: none;
-      border-top: 1px solid #e5e5e5;
-    }
+    .section-divider hr { border: none; border-top: 1px solid #e5e5e5; }
 
     /* ---- Considerations ---- */
-    .considerations {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 56px 40px;
-    }
-
-    .considerations h2 {
-      font-size: 1.4rem;
-      margin-bottom: 24px;
-    }
-
     .considerations-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      margin-top: 24px;
     }
 
     .consideration-card {
@@ -437,92 +334,55 @@
       padding: 24px;
     }
 
-    .consideration-card h3 {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
+    .consideration-card h3 { font-size: 0.95rem; margin-bottom: 10px; }
+    .consideration-card p { font-size: 0.85rem; color: #666; line-height: 1.5; }
+    .consideration-card ul { margin-top: 8px; padding-left: 18px; font-size: 0.85rem; color: #666; }
+    .consideration-card li { margin-bottom: 4px; }
 
-    .consideration-card p {
-      font-size: 0.88rem;
-      color: #666;
-      line-height: 1.5;
-    }
-
-    .consideration-card ul {
-      margin-top: 10px;
-      padding-left: 18px;
-      font-size: 0.88rem;
-      color: #666;
-    }
-
-    .consideration-card li {
-      margin-bottom: 4px;
-    }
-
-    /* ---- Juno Reference ---- */
-    .reference {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px;
-    }
-
+    /* ---- Reference ---- */
     .reference-card {
       background: #fff;
       border-radius: 10px;
       border: 1px solid #e8e8e8;
-      padding: 24px 28px;
+      padding: 20px 24px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
+      margin-top: 20px;
     }
 
     .reference-card .ref-icon {
-      flex: 0 0 40px;
-      height: 40px;
+      flex: 0 0 36px;
+      height: 36px;
       background: #f0f0f0;
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
-    .reference-card .ref-content h3 {
-      font-size: 0.95rem;
-      margin-bottom: 2px;
-    }
-
-    .reference-card .ref-content p {
-      font-size: 0.82rem;
-      color: #888;
-    }
-
-    .reference-card a {
-      color: #2B8CC4;
-      text-decoration: none;
-    }
-
-    .reference-card a:hover {
-      text-decoration: underline;
-    }
+    .reference-card .ref-content h3 { font-size: 0.9rem; margin-bottom: 2px; }
+    .reference-card .ref-content p { font-size: 0.78rem; color: #888; }
+    .reference-card a { color: #2B8CC4; text-decoration: none; }
+    .reference-card a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <!-- ==================== PAGE HEADER ==================== -->
   <div class="page-header">
     <h1>Joyful Clinics — Brand Color System</h1>
-    <p>Exploring how color differentiates the brand family across five service lines</p>
+    <p>Three approaches to color across the brand family and location network</p>
   </div>
 
 
   <!-- ==================== BRAND FAMILY ==================== -->
-  <section>
+  <div class="container">
     <h2>The Brand Family</h2>
     <p class="subtitle">Five lockups sharing the same wordmark structure, differentiated by service name</p>
 
     <div class="logo-row">
-      <div class="logo-item master">
+      <div class="logo-item">
         <img src="images/jc.svg" alt="Joyful Clinics">
         <div class="label">Master Brand</div>
       </div>
@@ -543,156 +403,149 @@
         <div class="label">Women's Health</div>
       </div>
     </div>
-  </section>
+  </div>
 
 
   <!-- ==================== THE QUESTION ==================== -->
-  <section>
+  <div class="container" style="padding-top: 0;">
     <div class="question-box">
-      <h2>4 colors or 5?</h2>
-      <p>Should the master "Joyful Clinics" brand have its own signature color, distinct from the four service lines? Or does the parent brand stay neutral, letting the service lines carry the color identity?</p>
+      <h2>How should color work across the brand?</h2>
+      <p>Joyful Clinics is the parent brand. Locations (like New Hampshire) each offer a specific service type. The question is whether color differentiates service types, and if so, does the master brand get its own color too?</p>
+      <div class="approaches">
+        <span class="approach-tag" style="background: #2B8CC4;">A: One Color</span>
+        <span class="approach-tag" style="background: #555;">B: 4 Colors</span>
+        <span class="approach-tag" style="background: #FF2E81;">C: 5 Colors</span>
+      </div>
     </div>
-  </section>
+  </div>
 
 
-  <!-- ==================== OPTION A: 5-COLOR ==================== -->
+  <!-- ==================== OPTION A: UNIFIED ==================== -->
   <div class="option-section">
     <div class="option-header">
-      <span class="option-badge" style="background: #FF2E81;">A</span>
-      <h2>5-Color System — Signature Master Brand</h2>
+      <span class="option-badge" style="background: #2B8CC4;">A</span>
+      <h2>One Color — Unified Brand</h2>
     </div>
-    <p class="subtitle">The parent brand gets its own bold color (#FF2E81 pink). Each service line has a distinct color. The master color appears in shared navigation, the main website, and parent-level marketing.</p>
+    <p class="subtitle">Every clinic, every location, every service type uses the same brand color. Differentiation happens through the service name and location, not color. Like Juno Vet's single-green approach.</p>
 
-    <!-- Color System -->
     <div class="color-system">
-      <div class="color-system-item is-master">
-        <svg class="j-mark" viewBox="0 0 225 225">
-          <circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/>
-          <mask id="m_a_master" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/></mask>
-          <g mask="url(#m_a_master)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
-        </svg>
-        <div class="color-name">Pink</div>
-        <div class="color-service">Master Brand</div>
-        <div class="color-hex">#FF2E81</div>
-      </div>
       <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
-          <mask id="m_a_tele" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/></mask>
-          <g mask="url(#m_a_tele)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Blue</div>
+        <div class="color-service">All Brands</div>
+        <div class="color-hex">#2B8CC4</div>
+      </div>
+      <div class="color-system-item" style="opacity: 0.5;">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Blue</div>
         <div class="color-service">Telehealth</div>
         <div class="color-hex">#2B8CC4</div>
       </div>
-      <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
-          <circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/>
-          <mask id="m_a_prim" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/></mask>
-          <g mask="url(#m_a_prim)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+      <div class="color-system-item" style="opacity: 0.5;">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
-        <div class="color-name">Orange</div>
+        <div class="color-name">Blue</div>
         <div class="color-service">Primary Care</div>
-        <div class="color-hex">#E8742A</div>
+        <div class="color-hex">#2B8CC4</div>
       </div>
-      <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
-          <circle cx="112.5" cy="112.5" r="112.5" fill="#8B2F9E"/>
-          <mask id="m_a_pedi" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#8B2F9E"/></mask>
-          <g mask="url(#m_a_pedi)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+      <div class="color-system-item" style="opacity: 0.5;">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
-        <div class="color-name">Purple</div>
+        <div class="color-name">Blue</div>
         <div class="color-service">Pediatrics</div>
-        <div class="color-hex">#8B2F9E</div>
+        <div class="color-hex">#2B8CC4</div>
       </div>
-      <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
-          <circle cx="112.5" cy="112.5" r="112.5" fill="#7AAB2E"/>
-          <mask id="m_a_wom" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#7AAB2E"/></mask>
-          <g mask="url(#m_a_wom)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+      <div class="color-system-item" style="opacity: 0.5;">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
-        <div class="color-name">Green</div>
+        <div class="color-name">Blue</div>
         <div class="color-service">Women's Health</div>
-        <div class="color-hex">#7AAB2E</div>
+        <div class="color-hex">#2B8CC4</div>
       </div>
     </div>
 
-    <!-- Website Concept A -->
-    <div class="concept-label">Website concept</div>
-    <div class="website-mockup">
-      <div class="mockup-chrome">
-        <span class="chrome-dot"></span>
-        <span class="chrome-dot"></span>
-        <span class="chrome-dot"></span>
-        <span class="chrome-url">joyfulclinics.com</span>
-      </div>
-      <div class="mockup-nav">
-        <div class="mockup-brand">
-          <svg viewBox="0 0 225 225" width="26" height="26">
-            <circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/>
-            <mask id="m_nav_a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/></mask>
-            <g mask="url(#m_nav_a)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
-          </svg>
-          <span class="brand-text">Joyful Clinics</span>
-        </div>
-        <div class="mockup-links">
-          <span>Services</span>
-          <span>About Us</span>
-          <span>Locations</span>
-          <span>For Providers</span>
-        </div>
-        <div class="mockup-cta" style="background: #FF2E81;">Book Appointment</div>
-      </div>
-      <div class="mockup-hero">
-        <div class="mockup-hero-content">
-          <h3>Healthcare that actually cares</h3>
-          <p>Same-day appointments with providers who listen. Joyful Clinics offers telehealth, primary care, pediatrics, and women's health — all under one roof.</p>
-          <div class="hero-btn" style="background: #FF2E81;">Find Your Clinic</div>
-        </div>
-        <div class="mockup-hero-visual" style="background: #FF2E81;">
-          <svg viewBox="0 0 225 225"><circle cx="112.5" cy="112.5" r="112.5" fill="white"/><mask id="m_hero_a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="white"/></mask><g mask="url(#m_hero_a)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="#FF2E81"/></g></svg>
-        </div>
-      </div>
-      <div class="mockup-services">
-        <div class="services-label">Browse by service</div>
-        <div class="service-pills">
-          <span class="service-pill" style="background: #2B8CC4;">Telehealth</span>
-          <span class="service-pill" style="background: #E8742A;">Primary Care</span>
-          <span class="service-pill" style="background: #8B2F9E;">Pediatrics</span>
-          <span class="service-pill" style="background: #7AAB2E;">Women's Health</span>
-        </div>
-      </div>
-      <div class="mockup-cards">
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #2B8CC4;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Telehealth</div>
-            <div class="card-desc">Video visits from anywhere. See a provider in minutes.</div>
-            <span class="card-btn" style="background: #2B8CC4;">Book Visit</span>
+    <div class="concept-label">Homepage → Location drill-down</div>
+    <div class="mockup-pair">
+      <div class="mockup-wrapper">
+        <div class="mockup-label">joyfulclinics.com</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com</span>
+          </div>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Clinics
+            </div>
+            <div class="mockup-links"><span>Locations</span><span>About</span><span>Providers</span></div>
+            <div class="mockup-cta" style="background:#2B8CC4;">Find a Clinic</div>
+          </div>
+          <div class="mockup-hero">
+            <h3>Healthcare that actually cares</h3>
+            <p>Find a Joyful Clinics location near you.</p>
+            <div class="hero-btn" style="background:#2B8CC4;">Browse Locations</div>
+          </div>
+          <div class="mockup-locations">
+            <div class="locations-label">Our Locations</div>
+            <div class="location-cards">
+              <div class="location-card">
+                <div class="loc-bar" style="background:#2B8CC4;"></div>
+                <div class="loc-body">
+                  <div class="loc-name">New Hampshire</div>
+                  <div class="loc-type">Primary Care</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar" style="background:#ddd;"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 2</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar" style="background:#ddd;"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 3</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #E8742A;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Primary Care</div>
-            <div class="card-desc">Your health, your schedule. Same-day appointments.</div>
-            <span class="card-btn" style="background: #E8742A;">Schedule</span>
+      </div>
+      <div class="mockup-wrapper">
+        <div class="mockup-label">Drill into: New Hampshire (Primary Care)</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com/new-hampshire</span>
           </div>
-        </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #8B2F9E;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Pediatrics</div>
-            <div class="card-desc">Where kids feel at ease. Warm, friendly care.</div>
-            <span class="card-btn" style="background: #8B2F9E;">Schedule</span>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Primary Care
+            </div>
+            <div class="mockup-links"><span>Services</span><span>Providers</span><span>About</span></div>
+            <div class="mockup-cta" style="background:#2B8CC4;">Book Appointment</div>
           </div>
-        </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #7AAB2E;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Women's Health</div>
-            <div class="card-desc">Comprehensive care for every stage of your journey.</div>
-            <span class="card-btn" style="background: #7AAB2E;">Schedule</span>
+          <div class="mockup-breadcrumb">Joyful Clinics / <span class="crumb-active">New Hampshire</span></div>
+          <div class="mockup-hero">
+            <h3>Joyful Primary Care — New Hampshire</h3>
+            <p>Same-day appointments with providers who listen. Now accepting new patients in Henniker.</p>
+            <div class="hero-btn" style="background:#2B8CC4;">Schedule a Visit</div>
           </div>
         </div>
       </div>
@@ -707,57 +560,51 @@
   <div class="option-section">
     <div class="option-header">
       <span class="option-badge" style="background: #555;">B</span>
-      <h2>4-Color System — Neutral Master Brand</h2>
+      <h2>4 Colors — Neutral Master, Colored Service Lines</h2>
     </div>
-    <p class="subtitle">The parent brand uses a dark neutral tone. Only the service lines carry color. The master brand's identity comes from the wordmark and J icon shape, not a unique color.</p>
+    <p class="subtitle">The master brand stays neutral. When you drill into a location, its service type determines the color. New Hampshire is Primary Care → orange. A future telehealth location → blue.</p>
 
-    <!-- Color System -->
     <div class="color-system">
       <div class="color-system-item is-master">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#2D3748"/>
-          <mask id="m_b_master" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#2D3748"/></mask>
-          <g mask="url(#m_b_master)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Dark Slate</div>
         <div class="color-service">Master Brand</div>
         <div class="color-hex">#2D3748</div>
       </div>
       <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
-          <mask id="m_b_tele" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/></mask>
-          <g mask="url(#m_b_tele)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Blue</div>
         <div class="color-service">Telehealth</div>
         <div class="color-hex">#2B8CC4</div>
       </div>
       <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/>
-          <mask id="m_b_prim" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/></mask>
-          <g mask="url(#m_b_prim)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Orange</div>
         <div class="color-service">Primary Care</div>
         <div class="color-hex">#E8742A</div>
       </div>
       <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#8B2F9E"/>
-          <mask id="m_b_pedi" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#8B2F9E"/></mask>
-          <g mask="url(#m_b_pedi)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Purple</div>
         <div class="color-service">Pediatrics</div>
         <div class="color-hex">#8B2F9E</div>
       </div>
       <div class="color-system-item">
-        <svg class="j-mark" viewBox="0 0 225 225">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
           <circle cx="112.5" cy="112.5" r="112.5" fill="#7AAB2E"/>
-          <mask id="m_b_wom" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#7AAB2E"/></mask>
-          <g mask="url(#m_b_wom)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
         </svg>
         <div class="color-name">Green</div>
         <div class="color-service">Women's Health</div>
@@ -765,82 +612,212 @@
       </div>
     </div>
 
-    <!-- Website Concept B -->
-    <div class="concept-label">Website concept</div>
-    <div class="website-mockup">
-      <div class="mockup-chrome">
-        <span class="chrome-dot"></span>
-        <span class="chrome-dot"></span>
-        <span class="chrome-dot"></span>
-        <span class="chrome-url">joyfulclinics.com</span>
-      </div>
-      <div class="mockup-nav">
-        <div class="mockup-brand">
-          <svg viewBox="0 0 225 225" width="26" height="26">
-            <circle cx="112.5" cy="112.5" r="112.5" fill="#2D3748"/>
-            <mask id="m_nav_b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="#2D3748"/></mask>
-            <g mask="url(#m_nav_b)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white"/></g>
-          </svg>
-          <span class="brand-text">Joyful Clinics</span>
-        </div>
-        <div class="mockup-links">
-          <span>Services</span>
-          <span>About Us</span>
-          <span>Locations</span>
-          <span>For Providers</span>
-        </div>
-        <div class="mockup-cta" style="background: #2D3748;">Book Appointment</div>
-      </div>
-      <div class="mockup-hero">
-        <div class="mockup-hero-content">
-          <h3>Healthcare that actually cares</h3>
-          <p>Same-day appointments with providers who listen. Joyful Clinics offers telehealth, primary care, pediatrics, and women's health — all under one roof.</p>
-          <div class="hero-btn" style="background: #2D3748;">Find Your Clinic</div>
-        </div>
-        <div class="mockup-hero-visual" style="background: #2D3748;">
-          <svg viewBox="0 0 225 225"><circle cx="112.5" cy="112.5" r="112.5" fill="white"/><mask id="m_hero_b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="225" height="225"><circle cx="112.5" cy="112.5" r="112.5" fill="white"/></mask><g mask="url(#m_hero_b)"><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="#2D3748"/></g></svg>
-        </div>
-      </div>
-      <div class="mockup-services">
-        <div class="services-label">Browse by service</div>
-        <div class="service-pills">
-          <span class="service-pill" style="background: #2B8CC4;">Telehealth</span>
-          <span class="service-pill" style="background: #E8742A;">Primary Care</span>
-          <span class="service-pill" style="background: #8B2F9E;">Pediatrics</span>
-          <span class="service-pill" style="background: #7AAB2E;">Women's Health</span>
-        </div>
-      </div>
-      <div class="mockup-cards">
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #2B8CC4;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Telehealth</div>
-            <div class="card-desc">Video visits from anywhere. See a provider in minutes.</div>
-            <span class="card-btn" style="background: #2B8CC4;">Book Visit</span>
+    <div class="concept-label">Homepage → Location drill-down</div>
+    <div class="mockup-pair">
+      <div class="mockup-wrapper">
+        <div class="mockup-label">joyfulclinics.com</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com</span>
+          </div>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#2D3748"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Clinics
+            </div>
+            <div class="mockup-links"><span>Locations</span><span>About</span><span>Providers</span></div>
+            <div class="mockup-cta" style="background:#2D3748;">Find a Clinic</div>
+          </div>
+          <div class="mockup-hero">
+            <h3>Healthcare that actually cares</h3>
+            <p>Find a Joyful Clinics location near you.</p>
+            <div class="hero-btn" style="background:#2D3748;">Browse Locations</div>
+          </div>
+          <div class="mockup-locations">
+            <div class="locations-label">Our Locations</div>
+            <div class="location-cards">
+              <div class="location-card">
+                <div class="loc-bar" style="background:#E8742A;"></div>
+                <div class="loc-body">
+                  <div class="loc-name">New Hampshire</div>
+                  <div class="loc-type" style="color:#E8742A;">Primary Care</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 2</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 3</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #E8742A;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Primary Care</div>
-            <div class="card-desc">Your health, your schedule. Same-day appointments.</div>
-            <span class="card-btn" style="background: #E8742A;">Schedule</span>
+      </div>
+      <div class="mockup-wrapper">
+        <div class="mockup-label">Drill into: New Hampshire (Primary Care → Orange)</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com/new-hampshire</span>
+          </div>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Primary Care
+            </div>
+            <div class="mockup-links"><span>Services</span><span>Providers</span><span>About</span></div>
+            <div class="mockup-cta" style="background:#E8742A;">Book Appointment</div>
+          </div>
+          <div class="mockup-breadcrumb">Joyful Clinics / <span class="crumb-active">New Hampshire</span></div>
+          <div class="mockup-hero">
+            <h3>Joyful Primary Care — New Hampshire</h3>
+            <p>Same-day appointments with providers who listen. Now accepting new patients in Henniker.</p>
+            <div class="hero-btn" style="background:#E8742A;">Schedule a Visit</div>
           </div>
         </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #8B2F9E;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Pediatrics</div>
-            <div class="card-desc">Where kids feel at ease. Warm, friendly care.</div>
-            <span class="card-btn" style="background: #8B2F9E;">Schedule</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section-divider"><hr></div>
+
+
+  <!-- ==================== OPTION C: 5-COLOR ==================== -->
+  <div class="option-section">
+    <div class="option-header">
+      <span class="option-badge" style="background: #FF2E81;">C</span>
+      <h2>5 Colors — Bold Master + Colored Service Lines</h2>
+    </div>
+    <p class="subtitle">The parent brand gets its own signature color. The master site and shared marketing use pink. When you drill into a location, it shifts to that service type's color.</p>
+
+    <div class="color-system">
+      <div class="color-system-item is-master">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Pink</div>
+        <div class="color-service">Master Brand</div>
+        <div class="color-hex">#FF2E81</div>
+      </div>
+      <div class="color-system-item">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#2B8CC4"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Blue</div>
+        <div class="color-service">Telehealth</div>
+        <div class="color-hex">#2B8CC4</div>
+      </div>
+      <div class="color-system-item">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Orange</div>
+        <div class="color-service">Primary Care</div>
+        <div class="color-hex">#E8742A</div>
+      </div>
+      <div class="color-system-item">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#8B2F9E"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Purple</div>
+        <div class="color-service">Pediatrics</div>
+        <div class="color-hex">#8B2F9E</div>
+      </div>
+      <div class="color-system-item">
+        <svg class="j-mark" viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="112.5" cy="112.5" r="112.5" fill="#7AAB2E"/>
+          <path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/>
+        </svg>
+        <div class="color-name">Green</div>
+        <div class="color-service">Women's Health</div>
+        <div class="color-hex">#7AAB2E</div>
+      </div>
+    </div>
+
+    <div class="concept-label">Homepage → Location drill-down</div>
+    <div class="mockup-pair">
+      <div class="mockup-wrapper">
+        <div class="mockup-label">joyfulclinics.com</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com</span>
+          </div>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#FF2E81"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Clinics
+            </div>
+            <div class="mockup-links"><span>Locations</span><span>About</span><span>Providers</span></div>
+            <div class="mockup-cta" style="background:#FF2E81;">Find a Clinic</div>
+          </div>
+          <div class="mockup-hero">
+            <h3>Healthcare that actually cares</h3>
+            <p>Find a Joyful Clinics location near you.</p>
+            <div class="hero-btn" style="background:#FF2E81;">Browse Locations</div>
+          </div>
+          <div class="mockup-locations">
+            <div class="locations-label">Our Locations</div>
+            <div class="location-cards">
+              <div class="location-card">
+                <div class="loc-bar" style="background:#E8742A;"></div>
+                <div class="loc-body">
+                  <div class="loc-name">New Hampshire</div>
+                  <div class="loc-type" style="color:#E8742A;">Primary Care</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 2</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+              <div class="location-card coming-soon">
+                <div class="loc-bar"></div>
+                <div class="loc-body">
+                  <div class="loc-name">Location 3</div>
+                  <div class="loc-type">Coming soon</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mockup-card">
-          <div class="card-color-bar" style="background: #7AAB2E;"></div>
-          <div class="card-body">
-            <div class="card-title">Joyful Women's Health</div>
-            <div class="card-desc">Comprehensive care for every stage of your journey.</div>
-            <span class="card-btn" style="background: #7AAB2E;">Schedule</span>
+      </div>
+      <div class="mockup-wrapper">
+        <div class="mockup-label">Drill into: New Hampshire (Primary Care → Orange)</div>
+        <div class="website-mockup">
+          <div class="mockup-chrome">
+            <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            <span class="chrome-url">joyfulclinics.com/new-hampshire</span>
+          </div>
+          <div class="mockup-nav">
+            <div class="mockup-brand">
+              <svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg"><circle cx="112.5" cy="112.5" r="112.5" fill="#E8742A"/><path d="M111.907 -47.5889H178.567V124.758C178.567 141.968 172.023 157.966 159.903 170.086C147.783 182.206 131.784 188.509 114.574 188.509C97.8481 188.509 81.8497 182.449 69.9721 170.814L69.4873 170.329L87.4249 157.239L87.6673 157.482C95.1817 163.784 104.635 167.42 114.574 167.42C137.844 167.42 156.994 148.028 156.994 124.758V-26.2577H111.907V-47.5889Z" fill="white" clip-path="circle(112.5px at 112.5px 112.5px)"/></svg>
+              Joyful Primary Care
+            </div>
+            <div class="mockup-links"><span>Services</span><span>Providers</span><span>About</span></div>
+            <div class="mockup-cta" style="background:#E8742A;">Book Appointment</div>
+          </div>
+          <div class="mockup-breadcrumb">Joyful Clinics / <span class="crumb-active">New Hampshire</span></div>
+          <div class="mockup-hero">
+            <h3>Joyful Primary Care — New Hampshire</h3>
+            <p>Same-day appointments with providers who listen. Now accepting new patients in Henniker.</p>
+            <div class="hero-btn" style="background:#E8742A;">Schedule a Visit</div>
           </div>
         </div>
       </div>
@@ -852,49 +829,44 @@
 
 
   <!-- ==================== CONSIDERATIONS ==================== -->
-  <div class="considerations">
-    <h2>Things to Consider</h2>
+  <div class="container">
+    <h2>Considerations</h2>
 
     <div class="considerations-grid">
       <div class="consideration-card">
-        <h3>Case for 5 colors (Option A)</h3>
+        <h3>Option A: One Color</h3>
         <ul>
-          <li>The main website, shared marketing, and business cards get a distinctive color that isn't confused with any service line</li>
-          <li>When a patient sees pink, they know it's the parent brand. When they see blue, they know it's telehealth. Clear wayfinding.</li>
-          <li>Scales better if new service lines are added later — the master color stays constant</li>
-          <li>Pink stands out against the blue/orange/purple/green palette — high visual contrast</li>
+          <li>Simplest to manage — one color across everything</li>
+          <li>Strong, unified brand recognition</li>
+          <li>Service type communicated by name only, not visually</li>
+          <li>Harder to differentiate at a glance as locations grow</li>
         </ul>
       </div>
       <div class="consideration-card">
-        <h3>Case for 4 colors (Option B)</h3>
+        <h3>Option B: 4 Colors</h3>
         <ul>
-          <li>Simpler system — fewer colors to manage across brand materials</li>
-          <li>The Juno Vet approach: one unified brand, differentiation happens through content/location, not color</li>
-          <li>The parent brand stays authoritative and understated — the service lines get to shine</li>
-          <li>Less risk of the palette feeling "too colorful" or carnival-like</li>
+          <li>Service types are instantly recognizable by color</li>
+          <li>Master brand stays understated — service lines shine</li>
+          <li>The homepage is a neutral "directory" framing</li>
+          <li>Simpler than 5 colors, but still has visual wayfinding</li>
         </ul>
       </div>
       <div class="consideration-card">
-        <h3>Website implications</h3>
-        <p>With 5 colors, the main joyfulclinics.com homepage has its own strong identity. Service line pages shift to their color. Navigation uses the master color as the anchor.</p>
-        <p style="margin-top: 8px;">With 4 colors, the homepage is more of a "directory" — neutral frame, colorful service line cards. Each service line subsite has its own personality.</p>
-      </div>
-      <div class="consideration-card">
-        <h3>Signage &amp; physical space</h3>
-        <p>If clinics co-locate multiple services, a 5th master color helps tie the physical space together. The front door says "Joyful Clinics" in pink, and interior wayfinding uses service colors.</p>
-        <p style="margin-top: 8px;">With 4 colors, the building exterior would need to pick one service color or go neutral.</p>
+        <h3>Option C: 5 Colors</h3>
+        <ul>
+          <li>Maximum differentiation — every brand level has its own color</li>
+          <li>Master brand has a strong, ownable identity (pink)</li>
+          <li>Most complex to manage across materials</li>
+          <li>Pink homepage → orange location page is a clear visual shift</li>
+        </ul>
       </div>
     </div>
-  </div>
 
-
-  <!-- ==================== REFERENCE ==================== -->
-  <div class="reference">
     <div class="reference-card">
       <div class="ref-icon">*</div>
       <div class="ref-content">
         <h3>Inspiration: <a href="https://www.junovet.com/" target="_blank">Juno Veterinary</a></h3>
-        <p>Multi-location vet brand with unified green identity. Locations (Toronto, Vancouver, Burlington) share one color system. Differentiation happens through location pages, not color.</p>
+        <p>Multi-location vet brand using a unified single-color approach. Locations (Toronto, Vancouver, Burlington) share one color. Differentiation through location pages, not color.</p>
       </div>
     </div>
   </div>
